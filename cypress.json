@@ -1,0 +1,6 @@
+{
+    "reporter": "cypress-mockawesome-reporter",
+    "video": false,
+    "defaultCommandTimeout": 10000,
+    "watchForFileChanges": false
+}
