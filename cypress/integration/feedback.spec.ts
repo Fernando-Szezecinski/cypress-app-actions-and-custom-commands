@@ -1,4 +1,4 @@
-describe('Feedback test', () => {
+describe('Feedback page', () => {
     it('Should submit feedback form', () => {
         cy.visitFeedbackPage()
         cy.fixture('feedbackData').then(({name, email,subject,message}) => {

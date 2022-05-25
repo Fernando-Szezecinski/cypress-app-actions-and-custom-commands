@@ -1,12 +1,10 @@
 declare namespace Cypress {
     interface Chainable {
+
         /**
-         * Action used for login into our application
-         * 
-         * @param username - Takes an username or id
-         * @param password - Takes an user password
+         * Navigates to the feedback page of the current base application
          */
-        login(username: string, password: string): Chainable<Element>
+        visitFeedbackPage() : Chainable<Element>
         /**
          * Action used for submitting user's feedback
          * @param name - It takes the name of user who's going to submit the feedback
@@ -19,10 +17,8 @@ declare namespace Cypress {
 }
 
 
-Cypress.Commands.add("login", (username, password) => {
-    cy.get('#user_login').type(username)
-    cy.get('#user_password').type(password)
-    cy.contains('Sign in').click()
+Cypress.Commands.add('visitFeedbackPage', () => {
+    cy.visit(`${Cypress.env('base_address')}/feedback.html`)
 })
 
 Cypress.Commands.add("submitFeedback", (name, email, subject, message) => {

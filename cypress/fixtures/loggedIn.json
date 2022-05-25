@@ -1,0 +1,53 @@
+{
+    "id": "interceptedRequest688",
+    "browserRequestId": "843431B89898B6A8AC1EF7ED2342C408",
+    "routeId": "1653521469754-187",
+    "request": {
+        "headers": {
+            "host": "zero.webappsecurity.com",
+            "proxy-connection": "keep-alive",
+            "content-length": "105",
+            "cache-control": "max-age=0",
+            "upgrade-insecure-requests": "1",
+            "origin": "http://zero.webappsecurity.com",
+            "content-type": "application/x-www-form-urlencoded",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36",
+            "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+            "referer": "http://zero.webappsecurity.com/login.html",
+            "accept-encoding": "gzip, deflate",
+            "accept-language": "en-US,en;q=0.9",
+            "cookie": "__cypress.initial=true"
+        },
+        "url": "http://zero.webappsecurity.com/signin.html",
+        "method": "POST",
+        "httpVersion": "1.1",
+        "body": "user_login=username&user_password=password&submit=Sign+in&user_token=e52f0a55-4238-42bf-a57c-020aff8d33c1",
+        "responseTimeout": 30000
+    },
+    "state": "Complete",
+    "requestWaited": true,
+    "responseWaited": true,
+    "subscriptions": [],
+    "response": {
+        "headers": {
+            "date": "Wed, 25 May 2022 23:31:03 GMT",
+            "server": "Apache-Coyote/1.1",
+            "access-control-allow-origin": "*",
+            "cache-control": "no-cache, max-age=0, must-revalidate, no-store",
+            "location": "/auth/accept-certs.html?user_token=e52f0a55-4238-42bf-a57c-020aff8d33c1",
+            "content-length": "0",
+            "set-cookie": [
+                "JSESSIONID=22A3EF29; Path=/; HttpOnly"
+            ],
+            "keep-alive": "timeout=5, max=99",
+            "connection": "Keep-Alive",
+            "content-type": "text/html"
+        },
+        "url": "http://zero.webappsecurity.com/signin.html",
+        "method": null,
+        "httpVersion": "1.1",
+        "statusCode": 302,
+        "statusMessage": "Found",
+        "body": ""
+    }
+}
