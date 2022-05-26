@@ -2,15 +2,12 @@ describe('Account summary page', () => {
 
     beforeEach(() => {
         cy.ensureUserIsLoggedIn()
-
     })
 
     it.only('should contain something', () => {
         
         cy.visitLoginPage()
 
-        
-        cy.intercept('POST','**/signin.html', {fixture:'loggedIn'}).as('loggedIn')
         // cy.intercept('POST','**/signin.html').as('loggedIn')
         
         cy.fixture('loginData').then(({username, password}) => {
@@ -21,7 +18,7 @@ describe('Account summary page', () => {
         //     console.log($resp)
         // })
 
-        // cy.visitAccountSummaryPage()
-        // cy.ensureAccountsBoardsAreVisible()
+        cy.visitAccountSummaryPage()
+        cy.ensureAccountsBoardsAreVisible()
     })
 })
